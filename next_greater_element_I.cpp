@@ -28,6 +28,10 @@ All the integers of nums1 also appear in nums2.
 */
 /*
 SOLUTION DESCRIPTION
+I was in a rush to complete this on time, so I went with an easy solution.
+I realize that this solution can be heavily optimized.
+I likely will not come back to optimize, so I just wanted to make a note of this.
+
 Loop through nums1, and for each value, loop through nums2.
 Assign the result to be -1 to start.
 If the value in nums2, after the value found in nums1, is greater than that value record that as result.
