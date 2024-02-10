@@ -1,2 +1,2 @@
-These files are my solutions to the described leetcode problems.  
-The purpose this repo is to document my ongoing coding practice.
+These files contain my solutions to the described coding problems.  
+The purpose this repository is to document my ongoing coding practice.
