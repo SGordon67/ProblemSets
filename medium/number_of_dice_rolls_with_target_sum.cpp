@@ -26,7 +26,7 @@ Constraints:
 */
 /*
 SOLUTION DESCRIPTION
-Inefficient custom solution duo to recursion.
+Inefficient custom solution due to recursion.
 If reaching the target is impossible, return 0.
   This can be to not enough die, or target too low.
 Continue calling the helper funciton until n reches 1, decrementing as you call it.
