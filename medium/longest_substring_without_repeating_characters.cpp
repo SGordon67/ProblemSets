@@ -26,6 +26,7 @@ s consists of English letters, digits, symbols and spaces.
 /*
 SOLUTION DESCRIPTION
 Sliding window solution.
+*A set would fit this situation more than a map, but a map is implemented here*
 Get rid of simple cases where length of string is 0 or 1.
 Window starts at 0.
 Loop until the right side of the window reaches the end of the string:
