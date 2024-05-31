@@ -45,3 +45,40 @@ public:
         return r;
     }
 };
+/*
+SOLUTION
+Created a second solution because I revisited this problem later and didn't realize I had already solved it before a slightly different way.
+Create a map between values and frequencies.
+Insert the pairs of value/frequency into a max heap.
+Pop the top k values off the max heap into a vector and return.
+*/
+typedef pair<int, int> pd;
+
+class Solution2 {
+public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        // get the frequency of each value
+        unordered_map<int, int> m;
+        for(int i = 0; i < nums.size(); i++){
+            m[nums[i]]++;
+        }
+
+        // insert into max heap
+        priority_queue<pd, vector<pd>, 
+            decltype([](const pd& pairOne, const pd& pairTwo) -> bool {
+                return pairOne.second < pairTwo.second;
+            })> pq;
+        for( auto a : m ){
+            pq.push(make_pair(a.first, a.second));
+        }
+
+        // extract most frequent elements
+        vector<int> r;
+        for(int i = 0; i < k; i++){
+            r.push_back(pq.top().first);
+            pq.pop();
+        }
+
+        return r;
+    }
+};
