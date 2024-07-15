@@ -1,1 +1,1 @@
-Problems and my solutions
+Problems and solutions
