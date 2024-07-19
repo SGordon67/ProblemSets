@@ -1,1 +1,1 @@
-Coding Practice
+Practice
